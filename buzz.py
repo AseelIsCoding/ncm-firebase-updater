@@ -12,7 +12,7 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 
 # Step 1: Load Firebase service account key
-cred = credentials.Certificate("captionbuzz-firebase-adminsdk-fbsvc-8121e75f69.json")  # Make sure this file is in the same folder
+cred = credentials.Certificate("firebase_key.json")  # Make sure this file is in the same folder
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
